@@ -1,0 +1,20 @@
+
+<!-- contentfragmentrender.html -->
+<sly data-sly-use.model="com.adobe.aem.guides.AEMTasks.core.models.contentfragmentmodel">
+
+    <!-- Render First Name -->
+    <div class="fragment-first-name">
+        <h2>First Name: ${model.firstName}</h2>
+    </div>
+
+    <!-- Render Job Description -->
+    <div class="fragment-job-description">
+        <p>Job Description: ${model.jobDescription}</p>
+    </div>
+
+    <!-- Render Check Box Status -->
+    <div class="fragment-checkbox-status">
+        <p>CBox Checked: ${model.cBoxChecked}</p>
+    </div>
+
+</sly>

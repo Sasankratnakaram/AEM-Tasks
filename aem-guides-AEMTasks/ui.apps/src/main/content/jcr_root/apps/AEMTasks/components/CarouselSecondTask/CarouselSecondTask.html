@@ -1,0 +1,13 @@
+<h1>TASK  #2  </h1>
+                                                                                        
+<div data-sly-use.obj="com.adobe.aem.guides.AEMTasks.core.models.Carouselsling">
+                                                                                        
+    <div data-sly-list.item="${obj.multifield}">
+        <p>path: ${item.path}</p>
+        <p>text: ${item.text}</p>
+        <div data-sly-list.nestedItem="${item.nestedmultifield}">
+            <p>nested text: ${nestedItem.nestedtext}</p>
+             
+        </div>
+    </div>
+</div>

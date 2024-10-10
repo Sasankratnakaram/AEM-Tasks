@@ -1,0 +1,5 @@
+<div data-sly-use.obj="${'com.adobe.aem.guides.AEMTasks.core.models.ActivityCenterHero'}"></div>
+
+<div>Hero Title: ${obj.heroTitle}</div>
+<div>Hero Text: ${obj.heroText @context='html'}</div>
+<img src="${properties.fileReference @ context='uri'}" alt="${obj.HeroTitle}" />

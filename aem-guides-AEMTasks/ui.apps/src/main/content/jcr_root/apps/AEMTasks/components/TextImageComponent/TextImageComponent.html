@@ -1,0 +1,22 @@
+<div class="text-image-component">
+    
+    <!-- Render Heading Field -->
+    <div class="heading-field">
+        <h2 data-sly-test="${properties.heading}">${properties.heading}</h2>
+    </div>
+
+    <!-- Render Description Field -->
+    <div class="description-field">
+        <div class="description" data-sly-test="${properties.description}">
+            ${properties.description @ context='html'}
+        </div>
+    </div>
+
+    <!-- Render Image Field -->
+    <div class="image-field">
+        <div class="image" data-sly-test="${properties.image}">
+            <img src="${properties.image @ context='uri'}" alt="${properties.heading}" />
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobe Style Footer</title>
+    <style>
+        /* General Footer Styles */
+        .footer {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Footer Links Styling */
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-list li {
+            display: inline;
+        }
+
+        .footer-list a {
+            color: #bbb;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .footer-list a:hover {
+            color: #e04f39; /* Adobe's signature red */
+        }
+
+        /* Social Media Icons Styling */
+        .footer-social a {
+            display: inline-block;
+            margin: 0 10px;
+            transition: opacity 0.3s;
+        }
+
+        .footer-social a:hover {
+            opacity: 0.7;
+        }
+
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Copyright Styling */
+        .footer-copyright {
+            margin-top: 20px;
+        }
+
+        .footer-copyright p {
+            font-size: 12px;
+            color: #777;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer Links Section -->
+            <div class="footer-links">
+                <ul class="footer-list">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="footer-social">
+                <a href="#"><img src="https://img.icons8.com/ios-filled/24/facebook-new.png" alt="Facebook"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/24/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/24/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/24/instagram-new.png" alt="Instagram"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/24/youtube.png" alt="YouTube"></a>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="footer-copyright">
+                <p>© 2024 Your Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/AEMTasks/clientlibs"/>
+    <filter root="/apps/AEMTasks/components"/>
+    <filter root="/apps/AEMTasks/i18n"/>
+</workspaceFilter>

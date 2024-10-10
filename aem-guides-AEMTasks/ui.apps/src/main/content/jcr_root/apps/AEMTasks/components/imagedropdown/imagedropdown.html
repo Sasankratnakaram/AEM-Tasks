@@ -1,0 +1,26 @@
+<select id="imageDropdown">
+    <option value="" disabled selected>Select an image</option>
+    <sly data-sly-use.model="com.adobe.aem.guides.AEMTasks.core.models.ImageDropdownModel">
+        <sly data-sly-list.image="${model.imagePaths}">
+            <option value="${image}">${image}</option>
+        </sly>
+    </sly>
+</select>
+
+<!-- Image placeholder -->
+<img id="selectedImage" src="" alt="Selected Image" style="display: none; max-width: 300px; max-height: 300px;" />
+
+<script>
+    document.getElementById('imageDropdown').addEventListener('change', function () {
+        var selectedValue = this.value;
+        var imageElement = document.getElementById('selectedImage');
+
+        if (selectedValue) {
+            // Update the img src attribute to display the selected image
+            imageElement.src = selectedValue;
+            imageElement.style.display = 'block'; // Show the image
+        } else {
+            imageElement.style.display = 'none'; // Hide the image if no selection is made
+        }
+    });
+</script>

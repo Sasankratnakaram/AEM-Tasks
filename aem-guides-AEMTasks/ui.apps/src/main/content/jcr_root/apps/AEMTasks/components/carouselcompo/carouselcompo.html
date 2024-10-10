@@ -1,0 +1,30 @@
+<h1>Carousel Component</h1>
+<!--<sly data-sly-use.obj="com.adobe.aem.guides.wknd.core.models.CarouselCompoSlingModel">
+<div data-sly-list="${obj.multifield}">
+<div>Text:${item.text}</div>
+<div>Path:${item.path}</div>
+<div data-sly-list="${item.nested}">
+<div>TextName:${item.textname}</div>
+</div>
+</div>
+</sly>
+
+<sly data-sly-list.resourceObj="${resource.getChildren}">
+resourceObject is:${resourceObj.name}<br>
+<sly data-sly-list.childObj="${resourceObj.getChildren}">
+<h>Text:${childObj.text}</h><br>
+<h>Path:${childObj.path}</h><br>
+<h>TextArea:${childObj.textarea}</h>
+</sly>-->
+
+
+<sly data-sly-list.resourceObj="${resource.getChildren}">
+    Resource Object Name: ${resourceObj.name}<br>
+    <sly data-sly-list.childObj="${resourceObj.listChildren}">
+        <div>Text: ${childObj.properties['text']}</div>
+        <div>Path: ${childObj.properties['path']}</div>
+        <div>TextArea: ${childObj.properties['textarea']}</div>
+    </sly>
+</sly>
+
+

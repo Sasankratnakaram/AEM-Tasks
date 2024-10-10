@@ -1,0 +1,24 @@
+<div data-sly-use.obj="${'com.adobe.aem.guides.AEMTasks.core.models.BmcFooter'}"></div>
+
+<!-- Render Multifield with linkLabel as hyperlinks -->
+<div>
+    <ul>
+        <sly data-sly-list="${obj.multiFieldItems}">
+            <li>
+                <a href="${item.navigationUrl @ context='uri'}" target="_blank">
+                    ${item.linkLabel}
+                </a>
+            </li>
+        </sly>
+    </ul>
+</div>
+
+<!-- Render Logo with logoLink as target URL -->
+<div>
+    <a href="${obj.logoLink @ context='uri'}" target="_blank">
+        <img src="${obj.fileReference @ context='uri'}" alt="Footer Logo" />
+    </a>
+</div>
+
+<!-- Render Rich Text -->
+<div>Rich Text: ${obj.richText @ context='html'}</div>

@@ -1,0 +1,12 @@
+
+<div data-sly-use.obj="${'com.adobe.aem.guides.AEMTasks.core.models.HeaderSlingModel'}"></div>
+
+  <div>Path Field: ${obj.pathField}</div>
+  <div>Text Field: ${obj.textField}</div>
+  <div>Check Box: ${obj.checkBox}</div>
+
+  <div>MultiField</div>
+  <sly data-sly-list.obj="${obj.multiField}">
+        <p>Date Picker: ${obj.datePicker}</p>
+        <p>text:${obj.multiText}</p>
+  </sly>

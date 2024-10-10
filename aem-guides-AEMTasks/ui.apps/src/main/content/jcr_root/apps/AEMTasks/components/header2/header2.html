@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobe Style Header</title>
+    <style>
+        /* General Header Styles */
+        .header {
+            background-color: #fff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #e0e0e0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1000;
+            font-family: Arial, sans-serif;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Logo Styling */
+        .logo img {
+            max-height: 40px;
+            width: auto;
+        }
+
+        /* Navigation Menu Styles */
+        .nav {
+            flex: 1;
+            text-align: center;
+        }
+
+        .nav-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .nav-item a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-item a:hover {
+            color: #e04f39; /* Adobe's red color */
+        }
+
+        /* Search Bar Styles */
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #f4f4f4;
+            border-radius: 20px;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+        }
+
+        .search-bar input[type="text"] {
+            border: none;
+            background: transparent;
+            padding: 5px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .search-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .search-btn img {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo Section -->
+            <div class="logo">
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Adobe_Corporate_Logo.png/800px-Adobe_Corporate_Logo.png" alt="Logo" />
+                </a>
+            </div>
+
+            <!-- Navigation Section -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#">Products</a></li>
+                    <li class="nav-item"><a href="#">Solutions</a></li>
+                    <li class="nav-item"><a href="#">Support</a></li>
+                    <li class="nav-item"><a href="#">Learn</a></li>
+                    <li class="nav-item"><a href="#">Community</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search Section -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search" />
+                <button class="search-btn">
+                    <img src="https://img.icons8.com/material-outlined/24/search.png" alt="Search Icon" />
+                </button>
+            </div>
+        </div>
+    </header>
+
+</body>
+</html>
